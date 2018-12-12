@@ -1,0 +1,90 @@
+# Project Information
+site_name: 'ra-guide'
+site_description: 'A technical guide for incoming research assistants in Economics'
+site_author: 'Kyle Barron'
+
+docs_dir: 'src'
+site_dir: 'html/mkdocs'
+
+# Repository
+repo_name: 'kylebarron/ra-guide'
+repo_url: 'https://github.com/kylebarron/ra-guide'
+edit_uri: 'blob/master/docs/src/'
+site_url: 'https://kylebarron.github.io/ra-guide/'
+
+# Social links
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/kylebarron'
+    - type: 'twitter'
+      link: 'https://twitter.com/kylebarron2'
+    - type: 'key'
+      link: 'https://keybase.io/kylebarron'
+
+# Layout
+nav:
+    - Home: 'index.md'
+    - Using a Text Editor:
+      - Overview: 'using_a_text_editor/overview.md'
+    - Workflow:
+      - Git and Github: 'workflow/git_github.md'
+    - Working with data:
+      - Data types: 'working_with_data/data_types.md'
+      - Storing data: 'working_with_data/storing_data.md'
+      - Regular Expressions: 'working_with_data/regular_expressions.md'
+    - Reproducible documents:
+      - Overview: 'reproducible_documents/overview.md'
+    - Using Linux:
+      - Using the command line: 'using_linux/using_the_command_line.md'
+      - Installing Software:
+        - Overview: 'using_linux/installing_software/overview.md'
+        - Tools: 'using_linux/installing_software/tools.md'
+
+# Theme
+theme:
+    feature:
+        tabs: false
+    logo:
+        icon: 'home'
+    name: 'material'
+    language: 'en'
+    palette:
+        primary: 'brown'
+    font:
+        text: 'Nunito Sans'
+        code: 'Fira Code'
+
+# Uncomment if I use math in the docs in the future
+# extra_javascript:
+#     - helpers/helpers.js
+#     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# These extensions are chosen to be a superset of Pandoc's Markdown.
+# This way, I can write in Pandoc's Markdown and have it be supported here.
+# https://pandoc.org/MANUAL.html
+markdown_extensions:
+    - admonition
+    - attr_list
+    - codehilite:
+        guess_lang: false
+    - def_list
+    - footnotes
+    - pymdownx.arithmatex
+    - pymdownx.betterem
+    - pymdownx.caret:
+        insert: false
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.escapeall:
+        hardbreak: true
+        nbsp: true
+    - pymdownx.magiclink:
+        hide_protocol: true
+        repo_url_shortener: true
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist(custom_checkbox=true)
+    - pymdownx.tilde
+    - toc:
+        permalink: true
