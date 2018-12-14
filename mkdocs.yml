@@ -33,6 +33,7 @@ nav:
       - Data types: 'working_with_data/data_types.md'
       - Storing data: 'working_with_data/storing_data.md'
       - Regular Expressions: 'working_with_data/regular_expressions.md'
+      - Writing Documentation: 'working_with_data/writing_documentation.md'
     - Reproducible documents:
       - Overview: 'reproducible_documents/overview.md'
     - Using Linux:
