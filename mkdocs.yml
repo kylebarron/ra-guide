@@ -12,6 +12,9 @@ repo_url: 'https://github.com/kylebarron/ra-guide'
 edit_uri: 'blob/master/docs/src/'
 site_url: 'https://kylebarron.github.io/ra-guide/'
 
+# Important for correct viewing offline
+use_directory_urls: false
+
 # Social links
 extra:
   social:
