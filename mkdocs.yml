@@ -32,6 +32,7 @@ nav:
       - Overview: 'using_a_text_editor/overview.md'
     - Workflow:
       - Git and Github: 'workflow/git_github.md'
+      - Code as Programs: 'workflow/coding_stata_programs.md'
     - Working with data:
       - Data types: 'working_with_data/data_types.md'
       - Storing data: 'working_with_data/storing_data.md'
@@ -39,11 +40,13 @@ nav:
       - Writing Documentation: 'working_with_data/writing_documentation.md'
     - Reproducible documents:
       - Overview: 'reproducible_documents/overview.md'
+      - Jupyter Notebooks: 'reproducible_documents/jupyter_notebooks.md'
     - Using Linux:
       - Using the command line: 'using_linux/using_the_command_line.md'
       - Installing Software:
         - Overview: 'using_linux/installing_software/overview.md'
         - Tools: 'using_linux/installing_software/tools.md'
+    - Glossary: 'glossary.md'
 
 # Theme
 theme:
@@ -88,7 +91,8 @@ markdown_extensions:
         repo_url_shortener: true
     - pymdownx.smartsymbols
     - pymdownx.superfences
-    - pymdownx.tasklist(custom_checkbox=true)
+    - pymdownx.tasklist:
+        custom_checkbox: true
     - pymdownx.tilde
     - toc:
         permalink: true
